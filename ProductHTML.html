@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>asd</title>
+<link href="https://login.totalweblite.com/Clients/aaapharma/Downloads/style4212017112447AM2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+
+<div class="dropdown">
+<button onclick ="myFunction1()" class="dropbtn 1">Anesthesia Machine</button>
+  <div id="myDropdown 1" class="dropdown-content 1">
+    <a href="#home">Haw</a>
+    <a href="#about">Asdt</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+
+
+
+<div class="dropdown">
+<button onclick="myFunction2()" class="dropbtn 2">DropdownNum2</button>
+  <div id="myDropdown 2" class="dropdown-content 2">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+</div>
+
+
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+
+
+
+
+function myFunction1() {
+    document.getElementById("myDropdown 1").classList.toggle("show");
+}
+
+function myFunction2() {
+    document.getElementById("myDropdown 2").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+</body>
+</html>
